@@ -15,7 +15,7 @@ import '../App.css'
       }, 50);
       return () => clearTimeout(timeout);
     }
-  },[index]);
+  },[index,message]);
 
   return(
     <>
