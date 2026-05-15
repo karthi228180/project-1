@@ -1,10 +1,10 @@
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import Part1 from './pages/Part1'
-import Part2 from './pages/Part2';
-import Part3 from './pages/Part3';
-import Part4 from './pages/part4';
+import Home from './pages/Home.js'
+import Part1 from './pages/Part1.js'
+import Part2 from './pages/Part2.js';
+import Part3 from './pages/Part3.js';
+import Part4 from './pages/part4.js';
 
 function App() {
   return (
