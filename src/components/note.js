@@ -29,9 +29,9 @@ import '../App.css'
 
           <div className='sup-btn'>
             <a href='/part2'>
-              <buttton className= "nxt-part2" >
+              <button className= "nxt-part2" >
               Surprice 🎁
-              </buttton>
+              </button>
             </a>
           </div>
         </div>
