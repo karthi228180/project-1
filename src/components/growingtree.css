@@ -1,0 +1,207 @@
+  /* body {
+  margin: 0;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.tree-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+} */
+
+/* SVG */
+
+/* .tree-svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+/* TREE PATHS */
+
+/* .tree-path {
+  fill: none;
+  stroke: #5d4037;
+  stroke-width: 12;
+  stroke-linecap: round;
+
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation: drawTree 3s ease forwards;
+}
+
+.branch1 {
+  animation-delay: 1s;
+}
+
+.branch2 {
+  animation-delay: 1.2s;
+}
+
+.branch3 {
+  animation-delay: 1.4s;
+}
+
+.branch4 {
+  animation-delay: 1.6s;
+}
+
+.branch5 {
+  animation-delay: 1.8s;
+}
+
+@keyframes drawTree {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
+
+/* HEART LEAVES */
+
+/* .heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+
+  opacity: 0;
+  transform: scale(0) rotate(-45deg);
+
+  transition: all 0.5s ease;
+}
+
+.heart.show {
+  opacity: 1;
+  transform: scale(1) rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -15px;
+  left: 0;
+}
+
+.heart::after {
+  left: 15px;
+  top: 0;
+} */
+
+
+body {
+  margin: 0;
+  background: #f6f6f6;
+  overflow: hidden;
+}
+
+.tree-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* SVG TREE */
+
+.tree-svg {
+  position: absolute;
+  left: 23%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+/* TREE PATH */
+
+.tree-path {
+  fill: none;
+  stroke: #5d4037;
+  stroke-width: 12;
+  stroke-linecap: round;
+  opacity: 0.7;
+
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+
+  animation: grow 3s ease forwards;
+}
+
+.branch {
+  animation-delay: 1s;
+}
+
+@keyframes grow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* HEART LEAVES */
+
+.heart {
+  position: absolute;
+  /* width: 28px;
+  height: 28px; */
+  width: 22px;
+  height: 22px;
+  
+  transform: scale(0) rotate(-45deg);
+
+  transition: all 0.5s ease;
+}
+
+.heart.show {
+  opacity: 1;
+  transform: scale(1) rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  /* width: 28px;
+  height: 28px; */
+    width: 22px;
+  height: 22px;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.heart::before {
+  /* top: -14px; */
+   top: -11px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  /* left: 14px; */
+   left: 11px;
+}
+
+
+@media (max-width: 768px){
+    .heart{
+        left: 120px;
+    }
+    .tree-path{
+        right: 30%;
+        width: 50px;
+    }
+    .tree-container{
+        left: 40px;
+    }
+    .tree-svg{
+        right: 20px;
+    }
+    .heart.show{
+            left: 20px;
+    }
+}

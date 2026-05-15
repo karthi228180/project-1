@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.world {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #0f172a, #4c1d95);
+  color: white;
+  text-align: center;
+}
+
+.scene {
+  animation: fade 0.8s ease-in;
+  padding: 30px;
+  max-width: 400px;
+}
+
+/* Buttons */
+/* button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #ff4fd8;
+  color: white;
+  cursor: pointer;
+} */
+
+/* button:hover {
+  transform: scale(1.05);
+} */
+
+/* RAPUNZEL */
+.tangled {
+  background: linear-gradient(to top, #3b1e6a, #7c3aed);
+  border-radius: 20px;
+}
+
+.lanterns {
+  font-size: 30px;
+  animation: float 2s infinite;
+}
+
+.castle {
+  font-size: 80px;
+  animation: glow 2s infinite;
+}
+
+/* BARBIE */
+.barbie {
+  background: linear-gradient(to right, #ff4fd8, #ffb6e6);
+  border-radius: 20px;
+}
+
+.sparkle {
+  font-size: 30px;
+  animation: float 1.5s infinite;
+}
+
+.barbie-icons {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+/* MOANA */
+.moana {
+  background: linear-gradient(to bottom, #0ea5e9, #1e3a8a);
+  border-radius: 20px;
+}
+
+.wave {
+  font-size: 30px;
+  animation: float 2s infinite;
+}
+
+.boat {
+  font-size: 40px;
+  animation: float 3s infinite;
+}
+
+/* FINAL */
+.final {
+  background: linear-gradient(to right, #111827, #4c1d95);
+  border-radius: 20px;
+}
+
+.final-icons {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px white; }
+  50% { text-shadow: 0 0 25px gold; }
+  100% { text-shadow: 0 0 10px white; }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+/* //////////////////////////////////////// */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.world {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #0f172a, #4c1d95);
+  color: white;
+  text-align: center;
+}
+
+/* Center gift */
+.center {
+  animation: fade 0.8s ease;
+}
+
+/* Gift animation */
+.gift {
+  font-size: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: bounce 1.5s infinite;
+}
+
+.gift.open {
+  transform: scale(1.3) rotate(10deg);
+}
+
+/* Buttons */
+.btn-nw {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #ff4fd8;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-nw:hover {
+  transform: scale(1.05);
+}
+
+/* Scenes */
+.scene {
+  padding: 30px;
+  border-radius: 20px;
+  width: 380px;
+  animation: fade 0.6s ease;
+}
+
+/* RAPUNZEL */
+.tangled {
+  background: linear-gradient(to top, #3b1e6a, #7c3aed);
+}
+
+/* BARBIE */
+.barbie {
+  background: linear-gradient(to right, #ff4fd8, #ffb6e6);
+}
+
+/* MOANA */
+.moana {
+  background: linear-gradient(to bottom, #0ea5e9, #1e3a8a);
+}
+
+/* FINAL */
+.final {
+  background: linear-gradient(to right, #111827, #4c1d95);
+}
+
+.big {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+/* Animations */
+.float {
+  font-size: 30px;
+  animation: float 2s infinite;
+}
+
+.wave {
+  font-size: 30px;
+  animation: float 2s infinite;
+}
+
+.sparkles {
+  font-size: 30px;
+  animation: float 1.5s infinite;
+}
+
+h1 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  color: #ffe4f2;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
