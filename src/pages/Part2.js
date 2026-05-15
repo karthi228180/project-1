@@ -4,7 +4,6 @@ import '../App.css'
 import FantasyDisney from '../components/fantasudisney';
 
 function Part2() {
-   const [show, setShow] = useState(false);
 
    const [paricles, setParticles] = useState([])
 
@@ -37,18 +36,8 @@ function Part2() {
   return (
     <>
     <div className='cont1'>
-      <ConfettiExplosion trigger={show}/>
+      <ConfettiExplosion />
 
-      {/* {!show ? (
-        <button onClick={() => setShow(true)} className='gift-btn'>
-          open your gift 🎁
-        </button>
-      ) : (
-        <div className='final-msg'>
-           🎉 Surprise!!! 🎉
-          <p>You are truly special ❤️</p>
-        </div>
-      )} */}
     </div>
 
     <div className='confetti-cont'>

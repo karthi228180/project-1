@@ -8,7 +8,7 @@ function Part2() {
 
   const [time, setTime] = useState("");
   // const [show, setShow] = useState(false)
-  const [display, setDisplay] = useState(false)
+  // const [display, setDisplay] = useState(false)
   
 
 

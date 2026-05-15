@@ -1,27 +1,18 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Confetti from 'react-confetti';
 
-const ConfettiExplosion = ({ trigger }) => {
+const ConfettiExplosion = () => {
 
-    const [run, setRun] = useState(false);
-
-    useEffect(() => {
-        if(trigger) {
-            setRun(true);
-
-            // setTimeout(() => setRun(false), 4000);
-        }
-    }, [trigger]);
   return (
     <>
-     (
+    
         <Confetti
          width={window.innerWidth}
          height={window.innerHeight}
          numberOfPieces={300}
          gravity={0.3}
          />
-    )
+    
     </>
     
   )
