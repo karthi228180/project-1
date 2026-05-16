@@ -93,7 +93,7 @@ export default function InteractiveDisneyGift() {
           </p>
             <a href="/part4">
           <button onClick={() => setStep(0)}>
-            🔁 Replay Magic
+              Finally🤗 ⏩
           </button>
           </a>
         </div>
