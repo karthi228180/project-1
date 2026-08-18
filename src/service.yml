@@ -4,10 +4,9 @@ metadata:
   name: react-service
 spec:
   ports:
-    -port: 80
-    targetPort: 8080
+    - port: 80
+      targetPort: 8080
   selector:
-    labels:
-      app: todo-app
+    app: todo-app
   type: NodePort
     
