@@ -29,7 +29,7 @@ pipeline {
             }
         }
         stage("Deploy to Kubernetes"){
-            step {
+            steps {
                 script {
                     dir ("src"){
                         withKubeCinfig(caCertificate: "", clusterName:"", contextName: "", credentialId:"Kubernetes", namespace: "", restrictKubeConfigAccess: false, serverUrl: ""){
